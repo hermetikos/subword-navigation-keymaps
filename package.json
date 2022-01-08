@@ -3,6 +3,10 @@
     "displayName": "Subword Navigation Keymaps",
     "publisher": "Hermetikos",
     "description": "Enables VS Code's subword navigation features. This allows you to use ctrl+arrow keys to move between individual words in camel case, a la \"Camel Humps\" in other code editors and IDEs.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hermetikos/subword-navigation-keymaps"
+    },
     "version": "1.0.0",
     "engines": {
         "vscode": "^1.63.0"
