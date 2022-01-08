@@ -1,0 +1,46 @@
+{
+    "name": "subword-navigation-keymaps",
+    "displayName": "Subword Navigation Keymaps",
+    "description": "Enables VS Code's subword navigation features. This allows you to use ctrl+arrow keys to move between individual words in camel case, a la \"Camel Humps\" in other code editors and IDEs.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Keymaps"
+    ],
+    "contributes": {
+        "keybindings": [
+            {
+                "key": "ctrl+right",
+                "command": "cursorWordPartRight",
+                "when": "textInputFocus"
+            },
+            {
+                "key": "ctrl+shift+right",
+                "command": "cursorWordPartRightSelect",
+                "when": "textInputFocus"
+            },
+            {
+                "key": "ctrl+left",
+                "command": "cursorWordPartLeft",
+                "when": "textInputFocus"
+            },
+            {
+                "key": "ctrl+shift+left",
+                "command": "cursorWordPartLeftSelect",
+                "when": "textInputFocus"
+            },
+            {
+                "key": "ctrl+backspace",
+                "command": "deleteWordPartLeft",
+                "when": "textInputFocus && !editorReadonly"
+            },
+            {
+                "key": "ctrl+shift+backspace",
+                "command": "deleteWordPartRight",
+                "when": "textInputFocus && !editorReadonly"
+            }
+        ]
+    }
+}
